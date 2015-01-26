@@ -62,9 +62,6 @@ int main(int argc, char* argv[])
             low = total_size;
         }
      
-        system("clear");
-        fprintf(stdout, "logging kernel memory usage\n\n\n\n\n\
-DO NOT SHUTDOWN THIS COMPUTER!\n\n\n\n\n\n");
         fprintf(stdout, "active slabs size: %.3lfMB\ntotal slabs size:%.3lfMB\n", active_size, total_size);
         fprintf(stdout, "peek: %.3lfMB\nlow: %.3lfMB\n", peek, low);
         fprintf(log_file, "%.6lf %.6lf\n", active_size, total_size); 
